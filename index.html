@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveau Membre Discord</title>
+    <style>
+        .welcome-card {
+            background-color: #36393f;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-image {
+            width: 128px;
+            height: 128px;
+            border-radius: 50%;
+            border: 4px solid #7289da;
+        }
+
+        .user-info {
+            flex-grow: 1;
+        }
+
+        .username {
+            font-size: 24px;
+            font-weight: bold;
+            color: #7289da;
+        }
+
+        .welcome-message {
+            margin-top: 15px;
+            color: #dcddde;
+        }
+
+        .join-date {
+            color: #72767d;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body style="background-color: #2f3136;">
+    <div class="welcome-card">
+        <div class="profile-section">
+            <img class="profile-image" src="${memberAvatar}" alt="Photo de profil">
+            <div class="user-info">
+                <div class="username">${memberUsername}</div>
+                <div class="join-date">A rejoint le ${joinDate}</div>
+            </div>
+        </div>
+        <div class="welcome-message">
+            Bienvenue sur le serveur ! 👋
+        </div>
+    </div>
+</body>
+</html>
